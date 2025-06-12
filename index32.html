@@ -1,0 +1,246 @@
+
+    <meta charset="UTF-8">
+    <title>About Monad</title>
+    <link rel="icon" href="Monad fan.webp" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav .logo {
+            float: left;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav button {
+            float: right;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        section.banner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .banner-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .banner-image {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .card-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav .logo,
+            nav button {
+                float: none;
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Monad</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button>Sign Up</button>
+    </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-content">
+        <h1>About Monad</h1>
+        <h2>Introduction</h2>
+        <p><b>Monad <sup>10000tps</sup></b> is a high-performance Ethereum-compatible L1. It advances decentralization
+            and scalability with over 10,000 transactions per second.</p>
+        <button>Join Now</button>
+    </div>
+    <div class="banner-image">
+        <img src="https://l3img-secondary.b-cdn.net/ipfs/QmeXY1rv8N9KqvAds1UPiUrv6CjrKibVpjtBUWG35kH5yW?width=752&optimizer=image"
+             alt="Monad Banner">
+    </div>
+</section>
+
+<div style="padding: 20px;">
+    <p>Login Form</p>
+    <form>
+        <label for="Email">Email:</label><br>
+        <input type="email" name="Email" id="Email" placeholder="sdh123@gmail.com"><br>
+        <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <form>
+        <p>Choose best project</p>
+        <input type="checkbox"> Monad<br>
+        <input type="checkbox"> Mega Eth<br>
+        <input type="checkbox"> Recall
+    </form>
+
+    <form>
+        <p>Choose Best product</p>
+        <input type="radio" name="product"> Defi<br>
+        <input type="radio" name="product"> Meme trend<br>
+        <input type="radio" name="product"> Binance alpha
+    </form>
+
+    <p>Select Your Country</p>
+    <select name="select">
+        <optgroup label="Select project">
+            <option value="Monad">Monad</option>
+            <option value="Og labs">Og labs</option>
+            <option value="Mega Eth">Mega Eth</option>
+        </optgroup>
+    </select>
+
+    <p>Any comment</p>
+    <textarea rows="5" cols="30" placeholder="Your feedback..."></textarea>
+</div>
+
+<div>
+    <table>
+        <caption><b>Monad DEX Table</b></caption>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Magma</td>
+            <td>Swap, Stake</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>Nad.fun</td>
+            <td>Meme Coin</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>Kuru</td>
+            <td>Swap</td>
+            <td><a href="#">Visit</a></td>
+        </tr>
+        <tr>
+            <td>Magiceden</td>
+            <td>NFT Trade</td>
+            <td><a href="https://www.monad.xyz/ecosystem" target="_blank">Visit</a></td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <p>© 2024 All Rights Reserved | Monad Blockchain</p>
+</footer>
+
+</body>
+</html>
